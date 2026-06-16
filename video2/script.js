@@ -1,0 +1,1 @@
+alert("Welcme to Farhan Bhai ki first website")

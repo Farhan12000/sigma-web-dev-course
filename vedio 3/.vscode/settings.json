@@ -1,0 +1,6 @@
+{
+    "livePreview.debugOnExternalPreview": false,
+    "livePreview.defaultPreviewPath": "/index.html",
+    "livePreview.hostIP": "10.54.105.100",
+    "liveServer.settings.host": "10.54.105.100"
+}
