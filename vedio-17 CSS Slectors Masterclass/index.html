@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* ELEMENT SLECTOR */
+        div{
+            /*background-color: red;*/
+        }
+        /*Class Selectors */
+        .red{
+            background-color: red;
+        }
+        /* ID SLECTOR */
+        #green{
+            background-color: green;
+        }
+        /*Child Selector */
+        div > p {
+            color: blue;
+            background-color: brown;
+        }
+        /*descendant sellector*/
+        div p {
+            background-color: blue;
+            color: brown;
+        }
+        /* Universal selectors */
+        * {
+            margin: 0;
+            padding: 0;
+        } 
+        /*Pseoudo slector*/
+        a:visited{
+            color: brown;
+        }
+        a:link{
+            color: green;
+        }
+        a:link{
+            color: black;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child {
+            background-color: aquamarine;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="red">
+        HEY ,I am using CSS
+        <article>
+        <p>I am the para inside div</p>
+        <p>I am the second para inside the div</p>
+        </article>
+    </div>
+    <div id="green">
+        I am using div
+    </div>
+    <a href="https://www.google.com">Go To Google</a>
+    <a href="https://www.youtube.com">Go To Youtube</a>
+    <a href="https://www.facebook.com">Go To Facebook</a>
+    
+</body>
+</html>
