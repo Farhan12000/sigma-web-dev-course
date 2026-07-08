@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  
+        body{
+            background-color: red;
+        }
+        @media scree and (orientation: portrait){
+            body{
+                border: 2px solid purple;
+            }
+        }
+
+
+        @media only screen and (max-width : 455px){
+            body{
+              background-color : rgb(126, 126, 196) ; 
+            }
+            .boxes{
+                flex-direction: column;
+                
+            }
+        }
+
+        /* @media not|only mediatypes and
+        (expressions) {
+         
+        } */
+         .boxes{
+              display: flex;
+         }
+
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: slateblue;
+            padding: 3px;
+            margin:3px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>                 
+        I am color for you
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+
+
+    </div>
+    
+</body>
+</html>
