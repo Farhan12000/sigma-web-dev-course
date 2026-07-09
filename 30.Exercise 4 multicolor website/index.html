@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Farhan.dev</title>
+
+<style>
+:root {
+  --primary: #6C63FF;
+  --secondary: #FF6584;
+  --accent: #00C9A7;
+  --bg: #ffffff;
+  --text: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   text-align: center;
+ 
+}
+
+/* Different colors */
+#home {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+}
+
+
+#about {
+  background: #f2f2f2;
+}
+
+#services {
+  background: linear-gradient(135deg, var(--secondary), var(--accent));
+  color: white;
+}
+
+#contact {
+  background: #ddd;
+}
+
+/* Button to change theme */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+  cursor:pointer;
+}
+
+/* Theme change */
+.dark {
+  --primary: #222;
+  --secondary: #444;
+  --accent: #888;
+  --bg: #111;
+  --text: #fff;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <h2>Farhan.dev</h2>
+  <ul>
+    <li><a href="#home"></a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Sections -->
+<section id="home">
+  <h1>Home Section</h1>
+  <p>Welcome Farhan 🔥</p>
+  <button class="btn" onclick="toggleTheme()">Change Theme</button>
+</section>
+
+<section id="about">
+  <h1>About Section</h1>
+  <p>This is about content</p>
+</section>
+
+<section id="services">
+  <h1>Services Section</h1>
+  <p>We provide awesome services</p>
+</section>
+
+<section id="contact">
+  <h1>Contact Section</h1>
+  <p>Contact us here</p>
+</section>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
