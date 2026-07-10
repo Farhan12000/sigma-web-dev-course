@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box:first-child{
+            background-color: yellowgreen;
+        }
+        .box:first-line{
+            color: brown;
+        }
+        .boxes *{
+            border: 2px solid black;
+            color: blue;
+        }
+        p, a, .box,[Data-color="primary"]{
+            padding-top: 45px;
+        }
+        .box:nth-child(odd){
+            background-color: blueviolet;
+        }
+        .boxes::after{
+            content: "Farhan is good boy";
+        }
+        .boxes::selection{
+            color: aqua;
+        }
+        .box::first-letter{
+            color: black;
+            font-size: 45px;
+
+        }
+        input::placeholder{
+            color: brown;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am a box</div>
+        <div class="box">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, velit iure earum, sunt voluptates at vero laudantium veniam maiores unde quisquam, fuga enim blanditiis quaerat minima nesciunt odio ad nobis sapiente aliquam dicta? Aperiam earum eius perspiciatis error, veniam quasi sunt quibusdam, provident qui corrupti repellendus sapiente reprehenderit neque sed laudantium delectus repellat nisi reiciendis, quia magnam eligendi nobis odio dicta. Incidunt debitis ullam quas nobis exercitationem laudantium perferendis quaerat vel sapiente, rerum odit nisi quos nam at reiciendis hic, et maxime quia corporis itaque modi tempore? Consectetur obcaecati aliquid dicta quia fugiat in iusto similique dolorem nisi praesentium eligendi saepe, nobis dolore impedit, explicabo veritatis ratione cum enim assumenda, nemo tempore labore corporis. Necessitatibus dolorem delectus harum, placeat possimus est molestias error rerum minus aliquam. Id recusandae nulla dolore earum sint mollitia iure veniam minima, unde molestiae perspiciatis eos repellat alias reiciendis nemo? Nesciunt, ut nisi vitae eos doloremque deserunt modi quam facilis sed beatae, qui molestiae voluptates recusandae architecto. Nobis tenetur corrupti esse, minima sequi aliquid asperiores? Blanditiis odit sapiente at nam tempora! Voluptatum soluta hic ipsam saepe mollitia nobis accusamus eaque odio incidunt quis harum at cum quibusdam, perspiciatis, fugiat alias dolorem error quos corporis, sapiente quas nostrum animi autem perferendis. Est minus, ratione ea itaque, impedit ipsa corrupti maiores nam dignissimos obcaecati asperiores doloribus, iure perspiciatis quod cupiditate laboriosam corporis atque. Modi veniam optio, nostrum exercitationem reiciendis aspernatur cumque ratione aliquid cum, ipsa ipsum fuga aliquam pariatur tenetur tempore delectus unde veritatis eveniet sunt? Neque obcaecati exercitationem rerum, sint distinctio eius iure? Esse totam quam incidunt, soluta non eaque perferendis eos reprehenderit iusto debitis ducimus doloremque, in sit quibusdam omnis possimus distinctio cum veniam est exercitationem autem facilis consectetur culpa! Earum possimus commodi natus dolore modi? Eius corporis ea eveniet quia consequuntur vero tenetur optio, hic nisi consequatur. Cumque, beatae deleniti impedit cupiditate delectus culpa asperiores at ab qui hic sunt quo velit officiis omnis distinctio fugit. Suscipit, ab! Eum dignissimos eos unde quasi velit porro animi, vitae repudiandae!
+
+
+        </div>
+        <div class="box">I am a box</div>
+        <input type="text" placeholder="Type your name here">
+        
+    </div>
+    
+</body>
+</html>
