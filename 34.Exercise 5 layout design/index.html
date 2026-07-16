@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout design</title>
     <style>
+           body{
+            background-color: red;
+        }
+        @media scree and (orientation: portrait){
+            body{
+                border: 2px solid purple;
+            }
+        }
+
+
+        @media only screen and (max-width : 455px){
+            body{
+              background-color : rgb(126, 126, 196) ; 
+            }
+            .boxes{
+                flex-direction: column;
+                
+            }
+        }
         body{
             margin: 0;
             padding: 0;
