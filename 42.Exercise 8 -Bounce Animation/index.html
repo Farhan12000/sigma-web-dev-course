@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+</head>
+<style>
+    .box{
+        background-color: blue;
+        height: 80vh;
+        width: 80vw;
+        position: relative;
+       animation:  farhan2 3s ease-in-out 3s 3 ;
+    }
+    .box1{
+        background-color: red;
+        height: 101px;
+        width: 101px;
+        border-radius: 70px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      animation: AnimateX 3s linear infinite , AnimateY 1s ease-out infinite alternate;
+       
+                
+    }
+    @keyframes AnimateX{
+            from{
+                left: 0;
+
+            }
+            to{
+                left: 100%;
+                background-color: yellow;
+            }
+
+        }
+    @keyframes AnimateY{
+        
+        from{
+              bottom: 0;
+        
+        }
+        to{
+            bottom: 100%;
+
+
+        }
+
+    }
+
+
+
+
+
+</style>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+
+
+    </div>
+    
+</body>
+</html>
