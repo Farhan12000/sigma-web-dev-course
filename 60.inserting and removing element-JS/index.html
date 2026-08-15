@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" >
+        <div class="box" style="display: inline;" data-createdby = "harry" data-conceptby="Farhan">Hey I am Box</div>
+        <div class="container bg-green red"></div>
+        <script>
+           // let div = document.createElement("div");
+            //div.innerHTML = "I have been sleep for two hour while travelling <b>by Farhan</b>"
+          //  div.setAttribute("class" , "created") ;
+          //  document.querySelector(".container").before(div); 
+            let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("beforebegin", "<b>I am under the water . please help mehere too much rainning</b>")
+            
+        </script>
+    </div>
+</body>
+</html>
